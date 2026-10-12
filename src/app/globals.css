@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange: #DA7756;
+  --bg: #0F0E17;
+  --card: #1A1825;
+  --border: rgba(218, 119, 86, 0.15);
+  --text: #F5F1EB;
+  --muted: #9B9AAF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Heebo', sans-serif;
+  direction: rtl;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #141220;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(218, 119, 86, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(218, 119, 86, 0.6);
+}
+
+/* Orange focus ring */
+:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+
+/* Input base styles */
+input, textarea, select {
+  background-color: #141220;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--muted);
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Kanban scrollbar */
+.kanban-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}

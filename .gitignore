@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+dist/
+tsconfig.tsbuildinfo
+
+# Env / secrets — never commit real values
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
